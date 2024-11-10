@@ -1,8 +1,8 @@
 layout: {qmk_keyboard: sofle/rev1}
 layers:
   LAYER0:
-  - {t: '=', s: +}
-  - {t: '1', s: '!'}
+  - {t: '=', h: '~', s: +}
+  - {t: '1', h: '`'}
   - {t: '2', s: '@'}
   - {t: '3', s: '#'}
   - {t: '4', s: $}
@@ -57,11 +57,11 @@ layers:
   - $$mdi:apple-keyboard-control$$
   - $$mdi:apple-keyboard-option$$
   - {t: '$$mdi:keyboard-return$$', h: '2'}
-  - $$mdi:keyboard-space$$
-  - {t: '$$mdi:backspace$$', h: layer1}
+  - {t: '$$mdi:keyboard-space$$', h: layer1}
+  - {t: '$$mdi:backspace$$', type: backspace}
   - {t: '$$mdi:keyboard-return$$', type: enter}
-  - {t: '$$mdi:keyboard-tab$$', h: layer1}
-  - $$mdi:keyboard-space$$
+  - {t: '$$mdi:keyboard-tab$$', h: '$$mdi:keyboard-tab-reverse$$'}
+  - {t: '$$mdi:keyboard-space$$', h: layer1}
   - {t: '$$mdi:keyboard-return$$', h: '2'}
   - {t: '[', s: '{'}
   - {t: ']', s: '}'}
@@ -122,11 +122,11 @@ layers:
   - '&bl BL_TOG'
   - RGB COLOR HSB(357,89,48)
   - RGB COLOR HSB(221,92,44)
-  - RGB COLOR HSB(134,100,46)
-  - {type: held}
-  - $$mdi:mouse-left-click-outline$$
-  - {type: held alternate}
+  - {t: 'RGB COLOR HSB(134,100,46)', type: held}
   - {t: '$$mdi:transfer$$', type: trans}
+  - $$mdi:mouse-left-click-outline$$
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {type: held alternate}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
