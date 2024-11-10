@@ -110,13 +110,6 @@
             label = "TMUX_WINDOW_0";
         };
 
-        tmux_new_window: tmux_new_window {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp LC(W) &kp E>;
-            label = "TMUX_NEW_WINDOW";
-        };
-
         tmux_new_panel: tmux_new_panel {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -179,6 +172,13 @@
             bindings = <&kp LC(W) &kp P>;
             label = "TMUX_PRE";
         };
+
+        tmux_new_win: tmux_new_win {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LC(W) &kp E>;
+            label = "TMUX_NEW_WIN";
+        };
     };
 
     keymap {
@@ -213,7 +213,7 @@
         layer_2 {
             bindings = <
 &kp TILDE  &tmux_window_1  &tmux_window_2  &tmux_window_3    &tmux_window_4     &tmux_window_5    &mmv MOVE_UP     &tmux_window_6     &tmux_window_7  &tmux_window_8  &tmux_window_9  &tmux_window_0  &trans
-&trans     &none           &mt W LC(W)     &tmux_new_window  &trans             &kp LC(PLUS)      &mmv MOVE_DOWN   &kp LS(LC(MINUS))  &trans          &kp F11         &kp F12         &tmux_pre       &kp PLUS
+&trans     &none           &mt W LC(W)     &tmux_new_win     &trans             &kp LC(PLUS)      &mmv MOVE_DOWN   &kp LS(LC(MINUS))  &trans          &kp F11         &kp F12         &tmux_pre       &kp PLUS
 &trans     &kp LC(A)       &none           &tmux_new_panel   &tmux_nav          &tmux_detatch     &mmv MOVE_LEFT   &trans             &trans          &trans          &trans          &kp LBRC        &kp RBRC
 &trans     &tmux_zoom      &tmux_clear     &tmux_vert_split  &tmux_h_split      &trans            &mmv MOVE_RIGHT  &trans             &trans          &tmux_rename    &soft_off       &bootloader     &trans
 &trans     &trans          &kp LEFT        &kp RIGHT         &kp LG(LS(SPACE))  &kp LC(ENTER)     &mkp LCLK        &kp LS(Q)          &trans          &kp UP_ARROW    &kp DOWN        &trans
