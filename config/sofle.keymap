@@ -189,7 +189,7 @@
 &mt TILDE EQUAL  &mt GRAVE NUMBER_1  &kp N2        &kp N3       &kp N4       &kp N5           &kp UP_ARROW     &kp N6           &kp N7       &kp N8       &kp N9            &kp N0             &kp MINUS
 &lt 2 ESC        &kp Q               &kp W         &kp E        &kp R        &kp T            &kp DOWN_ARROW   &kp Y            &kp U        &kp I        &kp O             &kp P              &kp BSLH
 &kp LEFT_WIN     &kp A               &kp S         &kp D        &kp F        &kp G            &kp LEFT_ARROW   &kp H            &kp J        &kp K        &kp L             &kp SEMI           &kp APOS
-&kp LSHFT        &kp Z               &kp X         &kp C        &kp V        &kp B            &kp RIGHT_ARROW  &kp N            &kp M        &kp COMMA    &kp DOT           &kp FSLH           &kp RIGHT_SHIFT
+&kp LSHFT        &mt LEFT_CONTROL Z  &kp X         &kp C        &kp V        &kp B            &kp RIGHT_ARROW  &kp N            &kp M        &kp COMMA    &kp DOT           &kp FSLH           &kp RIGHT_SHIFT
 &kp C_MUTE       &kp LCTRL           &kp LEFT_ALT  &lt 2 SPACE  &lt 1 ENTER  &kp BACKSPACE    &kp ENTER        &mt LS(TAB) TAB  &lt 1 SPACE  &lt 2 ENTER  &kp LEFT_BRACKET  &kp RIGHT_BRACKET
             >;
 
@@ -199,11 +199,11 @@
 
         layer_1 {
             bindings = <
-&kp GRAVE     &kp F1           &kp F2                            &kp F3                            &kp F4                             &kp F5             &mmv MOVE_UP     &kp F6           &kp F7           &kp F8      &kp F9     &kp F10           &trans
-&out OUT_USB  &kp GRAVE        &bt BT_SEL 0                      &bt BT_SEL 1                      &bt BT_SEL 2                       &bt BT_SEL 3       &mmv MOVE_DOWN   &kp PG_UP        &kp END          &kp UP      &kp HOME   &kp MINUS         &kp EQUAL
-&out OUT_BLE  &kp TILDE        &bt BT_CLR_ALL                    &bt BT_PRV                        &bt BT_NXT                         &bt BT_SEL 4       &mmv MOVE_LEFT   &kp PG_DN        &kp LEFT         &kp DOWN    &kp RIGHT  &kp LEFT_BRACKET  &kp RIGHT_BRACKET
-&trans        &rgb_ug RGB_OFF  &rgb_ug RGB_ON                    &rgb_ug RGB_EFF                   &rgb_ug RGB_EFR                    &rgb_ug RGB_SPI    &mmv MOVE_RIGHT  &rgb_ug RGB_BRI  &rgb_ug RGB_BRD  &kp INSERT  &kp F11    &kp F12           &trans
-&kp C_MUTE    &bl BL_TOG       &rgb_ug RGB_COLOR_HSB(357,89,48)  &rgb_ug RGB_COLOR_HSB(221,92,44)  &rgb_ug RGB_COLOR_HSB(134,100,46)  &trans             &mkp LCLK        &trans           &trans           &trans      &trans     &trans
+&kp GRAVE     &kp F1           &kp F2                            &kp F3                            &kp F4           &kp F5                               &mmv MOVE_UP     &kp F6           &kp F7           &kp F8         &kp F9     &kp F10           &kp F11
+&out OUT_USB  &kp GRAVE        &bt BT_SEL 0                      &bt BT_SEL 1                      &bt BT_SEL 2     &bt BT_SEL 3                         &mmv MOVE_DOWN   &kp PG_UP        &kp END          &kp PAGE_DOWN  &kp HOME   &kp MINUS         &kp EQUAL
+&out OUT_BLE  &kp TILDE        &none                             &bt BT_PRV                        &bt BT_NXT       &bt BT_SEL 4                         &mmv MOVE_LEFT   &kp LEFT_ARROW   &kp DOWN         &kp UP_ARROW   &kp RIGHT  &kp LEFT_BRACKET  &kp RIGHT_BRACKET
+&trans        &rgb_ug RGB_OFF  &rgb_ug RGB_ON                    &rgb_ug RGB_EFF                   &rgb_ug RGB_EFR  &rgb_ug RGB_SPI                      &mmv MOVE_RIGHT  &rgb_ug RGB_BRI  &rgb_ug RGB_BRD  &kp INSERT     &kp F11    &kp F12           &trans
+&kp C_MUTE    &bl BL_TOG       &rgb_ug RGB_COLOR_HSB(357,89,48)  &rgb_ug RGB_COLOR_HSB(221,92,44)  &none            &rgb_ug RGB_COLOR_HSB(144,100,37)    &mkp LCLK        &trans           &trans           &kp PAGE_DOWN  &trans     &trans
             >;
 
             display-name = "layer1";
