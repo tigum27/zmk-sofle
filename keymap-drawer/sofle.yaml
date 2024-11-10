@@ -147,7 +147,7 @@ layers:
   - {type: held}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: Ctl+ W, h: W}
-  - '&tmux_new_window'
+  - '&tmux_new_win'
   - {t: '$$mdi:transfer$$', type: trans}
   - Ctl+ +
   - {t: '$$mdi:menu-down$$', s: '$$mdi:mouse$$'}
